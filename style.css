@@ -1,0 +1,190 @@
+#header,#menu,#info,#classification,#rating,#gallery,#contacts,#footer{
+    background: white;
+    width: 80vw;
+    margin: 0 auto;
+}
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 35vh;
+    width: 100vw;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#menu{
+    background: #7c996b;
+    height: 6vh;
+    display: flex;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+}
+#menu a{
+    justify-content:space-around;
+    width: 25vw;
+    color: #3a200b;
+    font-weight: bold;
+    text-align: center;
+    line-height: 6vh;
+}
+a{
+    text-decoration: none;
+}
+#menu a:hover{
+    background: #9ab889;
+    color:#553216;
+}
+.hover-text {
+    justify-content:space-around;
+    width: 25vw;
+    color: #3a200b;
+    font-weight: bold;
+    text-align: center;
+    line-height: 6vh;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.hover-options {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #7c996b;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hover-options a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 2px 0;
+}
+.hover-options a:hover {
+    text-decoration: underline;
+}
+.hover-text:hover .hover-options {
+    display: block;
+}
+.bla{  /*Ех знову*/
+    height: 150px;
+    width: 150px;
+    object-fit: c;
+}
+.options{
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #7c996b;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.options a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 2px 0;
+}
+.options a:hover {
+    text-decoration: underline;
+}
+.hover-text:hover .options {
+    display: block;
+}
+
+/**/
+#begin, #info{
+    text-align: justify;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contacts{
+    padding: 1vw;
+}
+#footer{
+    height: 7vw;
+    justify-content: center;
+}
+#gal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gi{
+    width: 23vw;
+    height: 23vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1vw;
+    transition: 0.2s;
+}
+.gi:hover{
+    transform: scale(1.1);
+}
+#gallery h2{
+    padding: 1vw;
+}
+textarea{
+    resize: vertical;
+    max-height: 150px
+}
+form{
+    margin-left: 1vw;
+}
+#footer{
+    height: 7vw;
+    background: #7c996b;
+    color: #e2e2e2;
+    justify-content: center;
+}
+
+
+#fmenu{
+    width: 60vw;
+    display: flex;
+    height: 6vh;
+}
+#fmenu a{
+    justify-content: space-around;
+    width: 20vw;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 6vh;
+    background: #7c996b;
+}
+#fmenu a:hover{
+    background: #9ab889;
+}
+#up{
+    width: 5vw;
+    height: 5vh;
+    position: fixed;
+    z-index: 2;
+    opacity: 0.35;
+    background: #9ab889;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    top: 90vh;
+    left: 92.5vw;
+    text-align: center;
+    line-height: 5vh;
+}
+#up:hover{
+    opacity: 0.85;
+}
